@@ -1,8 +1,4 @@
-Sure! Here’s a more concise version with high-level descriptions for each folder:
-
----
-
-# KQL Hunting and Incident Response Repository
+# KQL Threat Hunting and Incident Response
 
 Welcome to the KQL (Kusto Query Language) Hunting and Incident Response repository. This repository contains a collection of queries designed for detecting, hunting, and responding to various security incidents. The queries are organized into different categories to facilitate easy navigation and usage.
 
