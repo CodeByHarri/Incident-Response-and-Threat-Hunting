@@ -39,15 +39,3 @@ User-focused queries in this section help monitor Azure Active Directory risk ev
 ## Operations
 
 The Operations directory includes queries related to operational tasks such as identifying similar incidents and tuning analytics for improved detection and response capabilities.
-
-## Contributing
-
-Contributions to this repository are welcome. Please follow the [contribution guidelines](CONTRIBUTING.md) to submit your contributions.
-
-## License
-
-This repository is licensed under the [MIT License](LICENSE).
-
----
-
-Feel free to customize this README further to match any additional details or specific guidelines you have for the repository.
