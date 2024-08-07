@@ -1,4 +1,9 @@
-This Repository contains Incident Response and Hunting queries and playbooks for Incident Response and Automation. 
+This Repository contains Incident Response and Hunting queries
 
 ## Table of Contents
 
+# Detections
+
+# Forensics
+
+# Hunting
