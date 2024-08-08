@@ -1,9 +1,9 @@
-#Detection of Hard Delete User Events
+# Detection of Hard Delete User Events
 
-#Description
+# Description
 This analytic rule identifies hard delete user events, which can indicate potential malicious activity aiming to remove traces or disrupt operations. Monitoring such events is crucial for identifying and mitigating security risk
 
-#Sentinel / Defender
+# Sentinel / Defender
 ```kql
 AuditLogs
 | where TimeGenerated > ago(90d)
