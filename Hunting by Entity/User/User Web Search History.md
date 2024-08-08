@@ -5,7 +5,7 @@ This query retrieves the web search history for a specific user over the last 30
 
 # Sentinel
 ```kql
-url_CL
+yourweblog
 | where TimeGenerated > ago(30d)
 // | where URLCategory_s == "search-engines"
 | where SourceUser_s contains "@{body('Get_user')?['userPrincipalName']}"
