@@ -4,7 +4,7 @@
 This analytic rule identifies delete policy events, which can indicate potential attempts to weaken security controls. Monitoring such events is crucial for identifying and mitigating security risks.
 
 # Sentinel / Defender
-```kusto
+```kql
 AuditLogs
 | where TimeGenerated > ago(90d)
 | where OperationName contains "Delete Policy"
@@ -22,6 +22,6 @@ AuditLogs
     InitiatedBy_ipAddress,
     InitiatedBy_userPrincipalName,
     TargetResources_displayName,
-    TargetResources_id![image](https://github.com/user-attachments/assets/052de3f6-6457-46ca-a3dc-4cf17557f62e)
+    TargetResources_id
 
 ```
