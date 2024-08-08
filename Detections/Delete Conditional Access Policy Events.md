@@ -1,4 +1,4 @@
-#Delete Conditional Access Policy Events
+# Delete Conditional Access Policy Events
 
 # Description
 This analytic rule identifies delete conditional access policy events, which can indicate attempts to bypass security measures. Monitoring such events is crucial for maintaining the integrity of access controls.
