@@ -44,6 +44,5 @@ AuditLogs
     NetworkLocationDetails,
     Status,
     DeviceType,
-    OSPlatform![image](https://github.com/user-attachments/assets/58edbb39-e05e-4f3c-b8b5-894e41eaef19)
-
+    OSPlatform
 ```
