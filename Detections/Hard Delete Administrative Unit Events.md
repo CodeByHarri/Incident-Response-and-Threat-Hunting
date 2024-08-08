@@ -4,7 +4,7 @@
 This analytic rule identifies hard delete administrative unit events, which can indicate potential malicious intent to disrupt management and remove control structures. Monitoring such events is crucial for maintaining the integrity and continuity of administrative operations.
 
 # Sentinel/ Defender
-``kql
+```kql
 AuditLogs
 | where TimeGenerated > ago(90d)
 | where OperationName contains "Hard Delete administrative unit"
