@@ -33,9 +33,9 @@ let fe= DeviceFileEvents
 | where TimeGenerated > ago(2d)
 | where InitiatingProcessAccountName =~ ac or DeviceName contains dn
 | where FileName has_any (".txt",".ps1",".zip",".rar",".tar",".exe",".bat",".scr",".vbs", ".gz", ".gzip", ".bz2", ".bzip2", ".xz", ".7z", ".tgz", ".tar.gz", ".tar.bz2",  ".tar.xz", ".lz", ".lzma", ".z", ".zipx", ".wim", ".jar", ".iso", ".arj", ".ace", ".cab", ".lzh", ".sfx", ".sz", ".apk", ".dmg", ".img") 
-| where FileOriginUrl contains ""
 | extend ReferrerHost=tostring(parse_url(FileOriginReferrerUrl).Host)
-| summarize count(), files=strcat_array(make_set(FileName,200),', ') ,ActionTypes=strcat_array(make_set(ActionType),', '), delta=max(TimeGenerated)-min(TimeGenerated), starttime=min(TimeGenerated), endtime=max(TimeGenerated) by  InitiatingProcessId, InitiatingProcessAccountName, InitiatingProcessFileName, DeviceName;
+| extend Referrer_FileURL= strcat(tostring(parse_url(FileOriginReferrerUrl).Host), ', ' ,FileOriginUrl)
+| summarize count(), URLs_IPs=strcat_array(make_set(Referrer_FileURL),', '),files=strcat_array(make_set(FileName,200),', ') ,ActionTypes=strcat_array(make_set(ActionType),', '), delta=max(TimeGenerated)-min(TimeGenerated), starttime=min(TimeGenerated), endtime=max(TimeGenerated) by  InitiatingProcessId, InitiatingProcessAccountName, InitiatingProcessFileName, DeviceName;
 union pe, ne, fe, de
 | sort by starttime desc 
 | project-reorder InitiatingProcessId,InitiatingProcessFileName, ActionTypes,URLs_IPs, commands, files, starttime, endtime, delta
