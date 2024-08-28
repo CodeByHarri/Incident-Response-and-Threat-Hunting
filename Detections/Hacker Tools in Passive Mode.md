@@ -1,7 +1,7 @@
 # HackerTools Running in Passive mode
 
 # Description
-A actor may try run tools by adding it to defender exclusions 
+A actor may try run tools by adding it to defender exclusions. an actor will enumerate the anti virus policies once they have local admin, then spoof hackertools as binaries that are whitelisted in defender policies  
 
 # Sentinel / Defender
 ```kql
