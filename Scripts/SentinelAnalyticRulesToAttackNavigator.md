@@ -37,12 +37,12 @@ project_directory/
 │       ├── Azure_Sentinel_analytics_rules2.json
 │       ├── DEFAULTLAYER.json
 │       └── (other Azure Sentinel analytic rule JSON files)
-├── script.py
+├── SentinelAnalyticRulesToAttackNavigator.py
 └── README.md
 ```
 
 - **`Attack/content/`**: Contains all your Azure Sentinel analytic rule JSON files and the `DEFAULTLAYER.json` file.
-- **`script.py`**: The Python script provided.
+- **`SentinelAnalyticRulesToAttackNavigator.py`**: The Python script provided.
 - **`README.md`**: This readme file.
 
 ## Setup Instructions
@@ -101,7 +101,7 @@ cd path/to/project_directory
 Execute the script using Python:
 
 ```bash
-python script.py
+python SentinelAnalyticRulesToAttackNavigator.py
 ```
 
 ### 3. Script Execution Details
