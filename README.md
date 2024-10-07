@@ -16,7 +16,7 @@ Welcome to the KQL (Kusto Query Language) Hunting and Incident Response reposito
 
 This directory contains KQL queries designed to detect various suspicious and malicious activities. The detections cover a wide range of attack techniques, including command execution, file activity, registry changes, and network communications, among others.
 
-## Digital Forensics
+## Scripts
 
 This directory includes scripts and output files for performing comprehensive digital forensics. These tools help in analyzing browser activities and operating system artifacts to uncover potential security incidents.
 
