@@ -50,7 +50,7 @@ SecurityIncident
 | where TimeGenerated > ago(90d)
 | mv-expand AlertIds
 | extend AlertIds = tostring(AlertIds)
-| join sa2 on $left.AlertIds == $right.SystemAlertId
+| join kind=rightouter sa2 on $left.AlertIds == $right.SystemAlertId
 | extend Title = replace_string(replace_string(replace_string(replace_string(Title, 'on one endpoint',''),' on multiple endpoints',''),'involving multiple users',''),'involving one user','')
 | extend Title = trim(@"\s", Title)
 | summarize 
