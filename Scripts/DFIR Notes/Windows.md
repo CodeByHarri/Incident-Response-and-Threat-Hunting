@@ -1,7 +1,6 @@
 # Windows DFIR Notes
 
 - [1. Discovery](#1-discovery)
-      - [xfreeRDP to Windows host from Kali](#xfreerdp-to-windows-host-from-kali)
   * [1.1 String Search](#11-string-search)
   * [1.2 Console History](#12-console-history)
   * [1.3 Rare File Extensions](#13-rare-file-extensions)
@@ -19,7 +18,6 @@
   * [2.1 Eric Zimmerman Tools](#21-eric-zimmerman-tools)
       - [NTDS.dit Export](#ntdsdit-export)
   * [2.2 Registry Explorer and Guide](#22-registry-explorer-and-guide)
-      - [**IMPORTANT:** USE THE **BOOMARKS** AFTER LOADING IN THE HIVES! SPEEDS THINGS UP!](#--important----use-the---boomarks---after-loading-in-the-hives--speeds-things-up-)
       - [Important Registry Locations for NTDS.dat](#important-registry-locations-for-ntdsdat)
       - [LNK files](#lnk-files)
       - [Using Registry viewer](#using-registry-viewer)
