@@ -1,3 +1,5 @@
+# Windows DFIR Notes
+
 - [1. Discovery](#1-discovery)
       - [xfreeRDP to Windows host from Kali](#xfreerdp-to-windows-host-from-kali)
   * [1.1 String Search](#11-string-search)
